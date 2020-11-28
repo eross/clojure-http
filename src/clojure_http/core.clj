@@ -1,7 +1,8 @@
 
 (ns clojure_http.core
   (:require [compojure.core :refer [defroutes GET POST]]
-            [ring.adapter.jetty :as jetty]))
+            [ring.adapter.jetty :as jetty])
+    (:gen-class))
 
 (def answer 42)
 
@@ -11,9 +12,6 @@
 (defn myappo [request]
   (str "Hello, " (get (:params request) "name"))
 )
-
-
-(myapp {})
 
 (defn string-response-middleware [handler]
   (fn [request]
@@ -26,3 +24,6 @@
 
 (defn -main []
   (jetty/run-jetty (string-response-middleware myapp) {:port 3000}))
+
+
+(println "I am compiled")
