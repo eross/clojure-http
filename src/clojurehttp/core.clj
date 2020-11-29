@@ -1,5 +1,5 @@
 
-(ns clojure_http.core
+(ns clojurehttp.core
   (:require [compojure.core :refer [defroutes GET POST]]
             [ring.adapter.jetty :as jetty])
     (:gen-class))

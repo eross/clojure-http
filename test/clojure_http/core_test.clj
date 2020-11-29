@@ -1,6 +1,6 @@
-(ns clojure-http.core-test
+(ns clojurehttp.core-test
   (:require [clojure.test :refer :all]
-            [clojure-http.core :refer :all]))
+            [clojurehttp.core :refer :all]))
 
 (deftest a-test
   (testing "FIXME, I fail."
