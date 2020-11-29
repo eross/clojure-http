@@ -6,6 +6,7 @@
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [ring "1.3.2"]
                  [compojure "1.6.2"]]
+  :plugins [[lein-cljfmt "0.7.0"]]
   :main ^:skip-aot clojurehttp.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
